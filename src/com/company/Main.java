@@ -4,7 +4,7 @@ public class Main {
 
             public static void main(String[] args) {
                 byte box = 5;
-                short B = 100;
+                short k = 100;
                 int i = 7;
                 long x = 922377L;
                 float f = 45.78f;
@@ -26,76 +26,72 @@ public class Main {
                 //homeTask3
 
                 int banana = 5;
-                int gr1 = 80;
-                int bweight = banana * gr1;
+                int bananaWeight = 80;
+                int allBananaWeight = banana * bananaWeight;
 
 
-                int milk1 = 100;
-                int grmilk1 = 105;
-                int milk2 = 200;
-                int milk2weight = milk2 / milk1 * grmilk1;
+                int milk = 100;
+                int milkWeight = 105;
+                int allMilk = 200;
+                int allMilkWeight = allMilk / milk * milkWeight;
 
 
                 int ice = 2;
-                int iceweight = 100;
-                int bothweight = ice * iceweight;
+                int iceWeight = 100;
+                int allIceWeight = ice * iceWeight;
 
 
                 int egg = 4;
                 int weight1 = 70;
-                int eggweight = egg * weight1;
+                int eggWeight = egg * weight1;
 
 
-                int all = bweight + milk2weight + bothweight + eggweight;
-                System.out.println(all + "граммов");
+                int totalWeight = allBananaWeight + allMilkWeight + allIceWeight + eggWeight;
+                System.out.println(totalWeight + "граммов");
 
-                float gr = 1090f;
-                float kg = gr / 1000f;
+                float kg = totalWeight / 1000f;
                 System.out.println(kg + "килограммов");
 
                 //homeTask4
 
-                int weightlossinkg = 7;
-                int weightlossingr = weightlossinkg * 1000;
-                int wldaymin = 250;
-                int daysmax = weightlossingr / wldaymin;
-                System.out.println(daysmax + "дней уйдет, если терять в день по 250 грамм");
-                int wldaymax = 500;
-                int daysmin = weightlossingr / wldaymax;
-                System.out.println(daysmin + "дней уйдет, если терять в день по 500 грамм");
-                int daysmiddle = (daysmin + daysmax) / 2;
-                System.out.println(daysmiddle + "дней потребуется в среднем");
+                int weightLossInKg = 7;
+                int weightLossInGr = weightLossInKg * 1000;
+                int wlDayMin = 250;
+                int daysMax = weightLossInGr / wlDayMin;
+                System.out.println(daysMax + "дней уйдет, если терять в день по 250 грамм");
+                int wlDayMax = 500;
+                int daysMin = weightLossInGr / wlDayMax;
+                System.out.println(daysMin + "дней уйдет, если терять в день по 500 грамм");
+                int daysMiddle = (daysMin + daysMax) / 2;
+                System.out.println(daysMiddle + "дней потребуется в среднем");
 
 
                 // homeTask5
 
                 float percent = 10f;
-                float mashasalary = 67760f;
-                float mashapercent = mashasalary / 100 * percent;
-                float mashasalarynew = mashasalary + mashapercent;
-                float mashaoldannualearning = mashasalary * 12;
-                float mashanewannualearning = mashasalarynew * 12;
-                float diff = mashanewannualearning - mashaoldannualearning;
-                System.out.println("Маша теперь получает " + mashasalarynew + " рублей");
-                System.out.println("Годовой доход вырос на " + diff + " рублей");
+                float mashaSalary = 67760f;
+                float mashaPercent = mashaSalary / 100 * percent;
+                float mashaSalaryNew = mashaSalary + mashaPercent;
+                float diff = mashaSalaryNew - mashaSalary;
+                float mashaAnnualEarning = diff * 12;
+                System.out.println("Маша теперь получает " + mashaSalaryNew + " рублей");
+                System.out.println("Годовой доход вырос на " + mashaAnnualEarning + " рублей");
 
-                float denissalary = 83690f;
-                float denispercent = denissalary / 100 * percent;
-                float denissalarynew = denissalary + denispercent;
-                float denisoldannualearning = denissalary * 12;
-                float denisnewannualearning = denissalarynew * 12;
-                float diff2 = denisnewannualearning - denisoldannualearning;
-                System.out.println("Денис теперь получает " + denissalarynew + " рублей");
-                System.out.println("Годовой доход вырос на " + diff2 + " рублей");
+                float denisSalary = 83690f;
+                float denisPercent = denisSalary / 100 * percent;
+                float denisSalaryNew = denisSalary + denisPercent;
+                float denisDifference = denisSalaryNew - denisSalary;
+                float denisAnnualEarning = denisDifference * 12;
+                System.out.println("Денис теперь получает " + denisSalaryNew + " рублей");
+                System.out.println("Годовой доход вырос на " + denisAnnualEarning + " рублей");
 
-                float kristinasalary = 76230f;
-                float kristinapercent = kristinasalary / 100 * percent;
-                float kristinasalarynew = kristinasalary + kristinapercent;
-                float kristinaoldannualearning = kristinasalary * 12;
-                float kristinanewannualearning = kristinasalarynew * 12;
-                float diff3 = kristinanewannualearning - kristinaoldannualearning;
-                System.out.println("Кристина теперь получает " + kristinasalarynew + " рублей");
-                System.out.println("Годовой доход вырос на " + diff3 + " рублей");
+                float kristinaSalary = 76230f;
+                float kristinaPercent = kristinaSalary / 100 * percent;
+                float kristinaSalaryNew = kristinaSalary + kristinaPercent;
+                float kristinaDifference = kristinaSalaryNew - kristinaSalary;
+                float kristinaAnnualEarning = kristinaDifference * 12;
+                System.out.println("Кристина теперь получает " + kristinaSalaryNew + " рублей");
+                System.out.println("Годовой доход вырос на " + kristinaAnnualEarning + " рублей");
 
 
 
@@ -108,8 +104,8 @@ public class Main {
                 int e = 9;
                 int result = a * (b + (c - d * e));
                 System.out.println(result);
-                int resultopposite = -1 * (a * (b + (c - d * e)));
-                System.out.println(resultopposite);
+                int resultOpposite = - result;
+                System.out.println(resultOpposite);
 
 
                 //homeTask7
